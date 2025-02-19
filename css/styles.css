@@ -21,34 +21,85 @@
   font-weight: bold;
   text-align: center;
 
-  /*centralizar qualquer coisa*/
+  /* Centralizar qualquer coisa */
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
+/* Responsividade */
+@media (max-width: 1200px) {
+  .item .Title {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .item .Title {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .item .Title {
+    font-size: 3rem;
+  }
+}
+
 .item .fruit {
   width: 60%;
   top: 0;
-  z-index: 3; /* Ficar a frente de todo mundo*/
+  z-index: 3; /* Ficar à frente de todo mundo */
 
-  /*centralizar qualquer coisa*/
+  /* Centralizar qualquer coisa */
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Ajuste de tamanho para telas menores */
+@media (max-width: 768px) {
+  .item .fruit {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .item .fruit {
+    width: 90%;
+  }
 }
 
 .item .refri {
   z-index: 2;
   width: 600px;
 
-  /*centralizar qualquer coisa*/
+  /* Centralizar qualquer coisa */
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Ajuste de tamanho para telas menores */
+@media (max-width: 1200px) {
+  .item .refri {
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .item .refri {
+    width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .item .refri {
+    width: 250px;
+  }
 }
 
 #prev,
@@ -76,6 +127,41 @@
   right: 30px;
 }
 
+/* Ajuste dos botões para telas menores */
+@media (max-width: 768px) {
+  #prev,
+  #next {
+    width: 40px;
+    height: 40px;
+    font-size: large;
+  }
+
+  #prev {
+    left: 15px;
+  }
+
+  #next {
+    right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #prev,
+  #next {
+    width: 35px;
+    height: 35px;
+    font-size: medium;
+  }
+
+  #prev {
+    left: 10px;
+  }
+
+  #next {
+    right: 10px;
+  }
+}
+
 @keyframes toActive {
   from {
     top: 100%;
@@ -83,12 +169,10 @@
   }
 }
 
-.item.active img.fruit{
-
-    animation: toActive 0.5s ease-in-out 1;
+.item.active img.fruit {
+  animation: toActive 0.5s ease-in-out 1;
 }
 
-.item.active .Title{
-
-    animation: toActive 0.5s ease-in-out 1;
+.item.active .Title {
+  animation: toActive 0.5s ease-in-out 1;
 }
