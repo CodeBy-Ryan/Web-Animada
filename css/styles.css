@@ -68,13 +68,27 @@
   border-radius: 50%;
 }
 
-#prev{
-    left: 30px;
-
+#prev {
+  left: 30px;
 }
 
+#next {
+  right: 30px;
+}
 
-#next{
-    right: 30px;
+@keyframes toActive {
+  from {
+    top: 100%;
+    opacity: 0;
+  }
+}
 
+.item.active img.fruit{
+
+    animation: toActive 0.5s ease-in-out 1;
+}
+
+.item.active .Title{
+
+    animation: toActive 0.5s ease-in-out 1;
 }
