@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Animação - Code By Ryan</title>
   </head>
   <body>
     <main>
-      <div class="item">
+      <div class="item active" style="--background: #ea3d41">
         <div class="Title">Morango</div>
         <img
           src="./img/Morango-refrigerante-foregroundBlur.png"
@@ -16,7 +17,7 @@
         <img src="./img/Morango-refrigerante.png" class="refri" />
       </div>
 
-      <div class="item">
+      <div class="item" style="--background: #2d5643">
         <div class="Title">Abacate</div>
         <img
           src="./img/Abacate-refrigerante-foregroundBlur.png"
@@ -25,7 +26,7 @@
         <img src="./img/Abacate-refrigerante.png" class="refri" />
       </div>
 
-      <div class="item">
+      <div class="item" style="--background: #e7a043">
         <div class="Title">Laranja</div>
         <img
           src="./img/Laranja-refrigerante-foregroundBlur.png"
@@ -34,9 +35,10 @@
         <img src="./img/Laranja-refrigerante.png" class="refri" />
       </div>
       <div class="arrow">
-        <button><</button>
-        <button>></button>
+        <button id="prev"><</button>
+        <button id="next">></button>
       </div>
     </main>
   </body>
+  <script src="./js/script.js"></script>
 </html>
