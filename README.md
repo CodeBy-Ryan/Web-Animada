@@ -25,7 +25,7 @@
 
 1. **Clone o repositório:**  
     ```bash
-    git clone https://github.com/CodeBy-Ryan/Aplicacao-Web-Animada.git
+    git clone https://github.com/CodeBy-Ryan/Animacao-Fruit.git
     ```
 2. **Abra o arquivo `index.html`** no navegador para visualizar a aplicação em funcionamento.  
 
