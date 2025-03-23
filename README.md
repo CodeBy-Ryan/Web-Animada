@@ -4,7 +4,7 @@
 
 <p align="center"> @Code By Ryan</p>
 
-![Image](https://github.com/user-attachments/assets/e9a34c90-4f67-4bb8-8dd8-4818872b582a)
+![Image](https://github.com/user-attachments/assets/63cef333-d99b-4008-9951-fc03bbc2f05b)
 
 <p align="center">Este projeto é uma aplicação web animada desenvolvida com HTML, CSS e JavaScript. Ele demonstra como criar interfaces dinâmicas e interativas utilizando animações CSS e manipulação do DOM com JavaScript.</p>
 
